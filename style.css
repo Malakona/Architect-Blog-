@@ -85,6 +85,7 @@ header{
   flex-wrap:wrap;
   gap:16px;
   justify-content:flex-end;
+  list-style-type: none;
 }
 
 .navlinks a{
@@ -93,15 +94,18 @@ header{
   padding: 8px 2px;
   border-bottom: 2px solid transparent;
   transition: border-color .15s ease, color .15s ease;
+  
 }
 
 .navlinks a:hover{
   border-bottom-color: rgba(31,111,235,.35);
+
 }
 
-.navlinks a.active{
+.navlinks a:active{
   border-bottom-color: var(--accent);
   color: var(--ink);
+  
 }
 
 /* Hero */

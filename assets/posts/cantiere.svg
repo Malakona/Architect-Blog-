@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#ffffff"/>
+  <g fill="none" stroke="#0b1220" stroke-opacity="0.18" stroke-width="8">
+    <path d="M240 760 H1360"/>
+    <path d="M360 760 V340 H760 V760"/>
+    <path d="M860 760 V420 H1260 V760"/>
+    <path d="M360 340 L560 220 L760 340"/>
+  </g>
+  <g fill="#1f6feb" opacity="0.10">
+    <rect x="900" y="460" width="320" height="260" rx="28"/>
+  </g>
+  <text x="120" y="160" font-family="ui-serif, Georgia, serif" font-size="64" font-weight="800" fill="#0b1220">Cantiere</text>
+  <text x="120" y="220" font-family="ui-sans-serif, system-ui" font-size="28" font-weight="700" fill="#5b6475">Direzione lavori in 7 punti</text>
+</svg>

@@ -1,4 +1,4 @@
-
+<?php get_header(); ?>
 
   <section class="hero" aria-label="Hero">
     <div class="container hero-grid">
@@ -10,15 +10,15 @@
           Metodo: concept chiaro, tavole leggibili, direzione lavori con checklist.
         </p>
         <div class="actions">
-          <a class="btn primary" href="progetti.html">Vedi i progetti</a>
-          <a class="btn" href="blog.html">Leggi il blog</a>
-          <a class="btn" href="contatti.html">Richiedi una consulenza</a>
+          <a class="btn primary" href="<?php echo get_permalink(get_page_by_path('progetti'))?>">Vedi i progetti</a>
+          <a class="btn" href="<?php echo get_permalink(get_page_by_path('blog'))?>">Leggi il blog</a>
+          <a class="btn" href="<?php echo get_permalink(get_page_by_path('contatti'))?>">Richiedi una consulenza</a>
         </div>
       </div>
 
       <aside class="hero-media" aria-label="Immagine hero e punti chiave">
         <div class="img">
-          <img src="assets/img/hero.svg" alt="Illustrazione: griglia e volumi architettonici" />
+          <img src="<?php echo bloginfo("template_url"); ?>/assets/img/hero.svg" alt="Illustrazione: griglia e volumi architettonici" />
         </div>
         <div class="meta">
           <div class="pill">Focus</div>
@@ -36,7 +36,7 @@
     <div class="grid" aria-label="Progetti selezionati">
       <a class="card" href="progetto-casa-cortile.html" aria-label="Apri progetto: Casa Cortile">
   <div class="feature">
-    <img src="assets/projects/casa-cortile.svg" alt="Immagine progetto: Casa Cortile" />
+    <img src="<?php echo bloginfo("template_url"); ?>/assets/projects/casa-cortile.svg" alt="Immagine progetto: Casa Cortile" />
     <div class="tag">🏷️ Residenziale</div>
     <div class="date">2025</div>
   </div>
@@ -51,7 +51,7 @@
 </a>
 <a class="card" href="progetto-loft-ferro.html" aria-label="Apri progetto: Loft Ferro">
   <div class="feature">
-    <img src="assets/projects/loft-ferro.svg" alt="Immagine progetto: Loft Ferro" />
+    <img src="<?php echo bloginfo("template_url"); ?>/assets/projects/loft-ferro.svg" alt="Immagine progetto: Loft Ferro" />
     <div class="tag">🏷️ Interni</div>
     <div class="date">2024</div>
   </div>
@@ -66,7 +66,7 @@
 </a>
 <a class="card" href="progetto-biblioteca.html" aria-label="Apri progetto: Biblioteca di Quartiere">
   <div class="feature">
-    <img src="assets/projects/biblioteca.svg" alt="Immagine progetto: Biblioteca di Quartiere" />
+    <img src="<?php echo bloginfo("template_url"); ?>/assets/projects/biblioteca.svg" alt="Immagine progetto: Biblioteca di Quartiere" />
     <div class="tag">🏷️ Pubblico</div>
     <div class="date">2023</div>
   </div>
@@ -81,15 +81,15 @@
 </a>
     </div>
     <div style="margin-top:16px">
-      <a class="btn" href="progetti.html">Tutti i progetti →</a>
+      <a class="btn" href="<?php echo get_permalink(get_page_by_path('progetti'))?>">Tutti i progetti →</a>
     </div>
 
     <h2 class="section-title">Dal blog</h2>
     <p class="muted" style="margin-top:0">Note pratiche su progetto, materiali e cantiere.</p>
     <div class="grid" aria-label="Ultimi articoli">
-      <a class="card" href="post-luce-naturale.html" aria-label="Apri articolo: Luce naturale: come disegnarla, non inseguirla">
+      <a class="card" href="<?php echo get_permalink()?>luce-naturale-come-disegnarla-non-inseguirla" aria-label="Apri articolo: Luce naturale: come disegnarla, non inseguirla">
   <div class="feature">
-    <img src="assets/posts/luce.svg" alt="Immagine articolo: Luce naturale: come disegnarla, non inseguirla" />
+    <img src="<?php echo bloginfo("template_url"); ?>/assets/posts/luce.svg" alt="Immagine articolo: Luce naturale: come disegnarla, non inseguirla" />
     <div class="tag">🏷️ Progetto</div>
     <div class="date">09/01/2026</div>
   </div>
@@ -104,9 +104,9 @@
     <span class="btn">Leggi →</span>
   </div>
 </a>
-<a class="card" href="post-materiali.html" aria-label="Apri articolo: Materiali: scelte coerenti con uso e budget">
+<a class="card" href="<?php echo get_permalink()?>materiali-scelte-coerenti-con-uso-e-budget" aria-label="Apri articolo: Materiali: scelte coerenti con uso e budget">
   <div class="feature">
-    <img src="assets/posts/materiali.svg" alt="Immagine articolo: Materiali: scelte coerenti con uso e budget" />
+    <img src="<?php echo bloginfo("template_url"); ?>/assets/posts/materiali.svg" alt="Immagine articolo: Materiali: scelte coerenti con uso e budget" />
     <div class="tag">🏷️ Interni</div>
     <div class="date">05/01/2026</div>
   </div>
@@ -121,9 +121,9 @@
     <span class="btn">Leggi →</span>
   </div>
 </a>
-<a class="card" href="post-cantiere.html" aria-label="Apri articolo: Direzione lavori: 7 punti per un cantiere sereno">
+<a class="card" href="<?php echo get_permalink();?>direzione-lavori-7-punti-per-un-cantiere-sereno" aria-label="Apri articolo: Direzione lavori: 7 punti per un cantiere sereno">
   <div class="feature">
-    <img src="assets/posts/cantiere.svg" alt="Immagine articolo: Direzione lavori: 7 punti per un cantiere sereno" />
+    <img src="<?php echo bloginfo("template_url"); ?>/assets/posts/cantiere.svg" alt="Immagine articolo: Direzione lavori: 7 punti per un cantiere sereno" />
     <div class="tag">🏷️ Cantiere</div>
     <div class="date">28/12/2025</div>
   </div>
@@ -140,7 +140,7 @@
 </a>
     </div>
     <div style="margin-top:16px">
-      <a class="btn" href="blog.html">Vai al blog →</a>
+      <a class="btn" href="<?php echo get_permalink(get_page_by_path('blog'))?>">Vai al blog →</a>
     </div>
 
     <h2 class="section-title">Come lavoro</h2>
@@ -158,25 +158,10 @@
         <h3 style="margin:0 0 8px">Obiettivo</h3>
         <p class="muted">Spazi comodi e coerenti: meno rumore visivo, più qualità d’uso.</p>
         <div style="margin-top:12px">
-          <a class="btn primary" href="studio.html">Scopri lo studio →</a>
+          <a class="btn primary" href="<?php echo get_permalink(get_page_by_path('studio'))?>">Scopri lo studio →</a>
         </div>
       </div>
     </div>
   </main>
 
-  <footer>
-  <div class="container">
-    <div class="small">
-      <strong>Studio Linea</strong> — Arch. Martina Conti (demo) · Via delle Trame 21, 00100 Roma ·
-      <a href="mailto:info@studiolinea.it">info@studiolinea.it</a> · +39 06 0000 0000
-    </div>
-    <div class="small muted" style="margin-top:8px">
-      © 2026 Studio Linea. Sito demo per esercitazione (HTML statico).
-    </div>
-  </div>
-</footer>
-</body>
-</html>
-
-
-
+  <?php get_footer(); ?>
