@@ -15,5 +15,5 @@
     </div>
     <hr class="sep" />
     <span class="btn">Leggi →</span>
-  </div>
+  </div> 
 </a>
