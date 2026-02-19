@@ -1,15 +1,10 @@
 <?php get_header(); ?>
 
  <main class="container">
-    <div class="breadcrumb"><a href="<?php echo home_url()?>">Home</a> <span>›</span> <a href="<?php echo get_permalink(get_page_by_path('blog'))?>">Blog</a> <span>›</span> <span>Articolo</span></div>
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> <a href="blog.html">Blog</a> <span>›</span> <span>Articolo</span></div>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <article class="article">
-    <div class="tag"><?php $cats = get_the_category();
-          if ( $cats ) : ?>🏷️ <?php echo esc_html( $cats[0]->name ); endif; ?></div>
-    <div class="date"><?php the_date(); ?></div>
-  </div>
-    <?php the_post_thumbnail('large'); ?>
       <div class="content">
         <div class="meta-line">
           <span class="chip">🏷️ Ansia</span>
