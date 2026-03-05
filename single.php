@@ -12,8 +12,8 @@
     <?php the_post_thumbnail('large'); ?>
       <div class="content">
         <div class="meta-line">
-          <span class="chip">🏷️ Ansia</span>
-          <span class="chip">📅 Lunedì 12 gennaio 2026</span>
+          <span class="chip">🏷️ <?php the_category(', '); ?></span>
+          <span class="chip">📅 <?php echo get_the_date(); ?></span>
           <span class="chip">🕒 6 min</span>
         </div>
         <h1 style="margin-top:12px"><?php the_title(); ?></h1>

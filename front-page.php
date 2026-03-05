@@ -18,7 +18,7 @@
 
       <aside class="hero-media" aria-label="Immagine hero e punti chiave">
         <div class="img">
-          <img src="<?php echo bloginfo("template_url"); ?>/assets/img/hero.svg" alt="Illustrazione: griglia e volumi architettonici" />
+          <?php the_post_thumbnail(); ?>
         </div>
         <div class="meta">
           <div class="pill">Focus</div>
